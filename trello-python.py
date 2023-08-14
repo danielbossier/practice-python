@@ -71,7 +71,23 @@
 # Input: [1, 2, 3, 4]
 # Output: 24
 
+# def _product(arr):
+#     output = arr[0]
+#     for i in arr:
+#         output = output * i
+#     print(output)
+        
+# _product([1, 2, 3, 4])
+
 # Given an array, write a function that returns an array that contains the original array’s values in reverse.
 
 # Input: [1, 2, 3, 4, 5]
 # Output: [5, 4, 3, 2, 1]
+
+# def _reverse(arr):
+#     output = []
+#     for i in reversed(arr):
+#         output.append(i)
+#     print(output)
+
+# _reverse([1, 2, 3, 4, 5])
