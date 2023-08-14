@@ -17,14 +17,14 @@
 # Input: [99, 101, 88, 4, 2000, 50]
 # Output: [99, 88, 4, 50]
 
-def less_than_100(arr):
-    output = []
-    for i in arr:
-        if i < 100:
-            output.append(i)
-    print(output)
+# def less_than_100(arr):
+#     output = []
+#     for i in arr:
+#         if i < 100:
+#             output.append(i)
+#     print(output)
 
-less_than_100([99, 101, 88, 4, 2000, 50])
+# less_than_100([99, 101, 88, 4, 2000, 50])
 
 # def less_than_100(arr):
 #     i = 0
@@ -44,16 +44,27 @@ less_than_100([99, 101, 88, 4, 2000, 50])
 # Output: [8, 4, 10, 198, -8]
 
 # def _double(arr):
+#     output = []
 #     for i in arr:
 #         i = i * 2
-#     print(arr)
+#         output.append(i)
+#     print(output)
 
-# _double([4, 2, 5, 99, -4])    
+# _double([4, 2, 5, 99, -4])
 
 # Write a function that returns the greatest value from an array of numbers.
 
 # Input: [5, 17, -4, 20, 12]
 # Output: 20
+
+# def _greatest(arr):
+#     output = 0
+#     for i in arr:
+#         if i > output:
+#             output = i
+#     print(output)
+
+# _greatest([5, 17, -4, 20, 12])
 
 # Write a function that accepts an array of numbers and returns the product of all the numbers.
 
