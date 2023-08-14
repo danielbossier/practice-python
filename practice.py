@@ -102,8 +102,3 @@
 
 # for number in range(5):
 #     print(number)
-
-# tuples
-
-numbers = (1, 2, 3)
-print(numbers.count(3))
