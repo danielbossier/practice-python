@@ -91,3 +91,25 @@
 #     print(output)
 
 # _reverse([1, 2, 3, 4, 5])
+
+
+
+# WORKING ON THIS ONE
+# Input:
+# [2, 1, 3, 2, 5, 1, 2, 6, 2, 7, 1, 5, 6, 3, 2, 6, 2, 1, 2]
+
+# Output:
+# [2, 3, 1, 2, 2, 1, 5, 2, 2]
+
+# def _skip_it(arr):
+#     output = []
+#     output.append(arr[0])
+#     i = 0
+#     while i < 100:
+#         i += output[-1]
+#         output.append(arr[i])
+#         print(output)
+#     print(output)
+
+
+# _skip_it([2, 1, 3, 2, 5, 1, 2, 6, 2, 7, 1, 5, 6, 3, 2, 6, 2, 1, 2])
