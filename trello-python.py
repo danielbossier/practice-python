@@ -94,7 +94,7 @@
 
 
 
-# WORKING ON THIS ONE
+# WORKING ON THIS ONE, REVIEW ENUMERATE
 # Input:
 # [2, 1, 3, 2, 5, 1, 2, 6, 2, 7, 1, 5, 6, 3, 2, 6, 2, 1, 2]
 
@@ -105,7 +105,7 @@
 #     output = []
 #     output.append(arr[0])
 #     i = 0
-#     while i < 100:
+#     for i in range(0, len(arr)):
 #         i += output[-1]
 #         output.append(arr[i])
 #         print(output)
