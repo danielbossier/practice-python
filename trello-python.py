@@ -113,3 +113,18 @@
 
 
 # _skip_it([2, 1, 3, 2, 5, 1, 2, 6, 2, 7, 1, 5, 6, 3, 2, 6, 2, 1, 2])
+
+
+# Write a function that returns whether a given number is a prime number.
+
+def is_prime(n):
+     if n < 2:
+          return False
+     i = 2
+     while i < n and n > 1:
+          if n % i == 0:
+               return False
+          i += 1
+     return True
+
+print(is_prime(9))
