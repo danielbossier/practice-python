@@ -117,14 +117,33 @@
 
 # Write a function that returns whether a given number is a prime number.
 
-def is_prime(n):
-     if n < 2:
-          return False
-     i = 2
-     while i < n and n > 1:
-          if n % i == 0:
-               return False
-          i += 1
-     return True
+# def is_prime(n):
+#      if n < 2:
+#           return False
+#      i = 2
+#      while i < n and n > 1:
+#           if n % i == 0:
+#                return False
+#           i += 1
+#      return True
 
-print(is_prime(9))
+# print(is_prime(9))
+
+# Given two arrays of strings, return a new string that contains every combination of a string from the first array concatenated with a string from the second array.
+
+# Input: ["a", "b", "c"], ["d", "e", "f", "g"]
+# Output: ["ad", "ae", "af", "ag", "bd", "be", "bf", "bg", "cd", "ce", "cf", "cg"]
+
+def _mesh(arr1, arr2):
+    i1 = 0
+    i2 = 0
+    output = []
+    while i1 < len(arr1):
+        while i2 < len(arr2):
+            output.append(arr1[i1] + arr2[i2])
+            i2 += 1
+        i1 += 1
+        i2 = 0
+    return output
+
+print(_mesh(["a", "b", "c"], ["d", "e", "f", "g"]))
