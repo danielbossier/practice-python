@@ -134,16 +134,16 @@
 # Input: ["a", "b", "c"], ["d", "e", "f", "g"]
 # Output: ["ad", "ae", "af", "ag", "bd", "be", "bf", "bg", "cd", "ce", "cf", "cg"]
 
-def _mesh(arr1, arr2):
-    i1 = 0
-    i2 = 0
-    output = []
-    while i1 < len(arr1):
-        while i2 < len(arr2):
-            output.append(arr1[i1] + arr2[i2])
-            i2 += 1
-        i1 += 1
-        i2 = 0
-    return output
+# def _mesh(arr1, arr2):
+#     i1 = 0
+#     i2 = 0
+#     output = []
+#     while i1 < len(arr1):
+#         while i2 < len(arr2):
+#             output.append(arr1[i1] + arr2[i2])
+#             i2 += 1
+#         i1 += 1
+#         i2 = 0
+#     return output
 
-print(_mesh(["a", "b", "c"], ["d", "e", "f", "g"]))
+# print(_mesh(["a", "b", "c"], ["d", "e", "f", "g"]))
