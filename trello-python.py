@@ -147,3 +147,20 @@
 #     return output
 
 # print(_mesh(["a", "b", "c"], ["d", "e", "f", "g"]))
+
+# If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+
+# Find the sum of all the multiples of 3 or 5 below 1000.
+
+def _multiples(n):
+    i = 0
+    threesAndFives = []
+    while i < n:
+        if i % 3 == 0 or i % 5 == 0:
+            threesAndFives.append(i)
+        i += 1
+    return sum(threesAndFives)
+
+print(_multiples(1000))
+
+        
