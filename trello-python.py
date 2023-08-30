@@ -168,16 +168,16 @@
 # Input: ["a", "b", "c", "d"]
 # Output: ["ab", "ac", "ad", "ba", "bc", "bd", "ca", "cb", "cd", "da", "db", "dc"]
 
-def _mesh2(arr):
-    i1 = 0
-    output = []
-    while i1 < len(arr):
-        i2 = 0
-        while i2 < len(arr):
-            if arr[i1] != arr[i2]:
-                output.append(arr[i1] + arr[i2])
-            i2 += 1
-        i1 += 1
-    return output
+# def _mesh2(arr):
+#     i1 = 0
+#     output = []
+#     while i1 < len(arr):
+#         i2 = 0
+#         while i2 < len(arr):
+#             if arr[i1] != arr[i2]:
+#                 output.append(arr[i1] + arr[i2])
+#             i2 += 1
+#         i1 += 1
+#     return output
 
-print (_mesh2(["a", "b", "c", "d"]))
+# print (_mesh2(["a", "b", "c", "d"]))
