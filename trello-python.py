@@ -152,15 +152,32 @@
 
 # Find the sum of all the multiples of 3 or 5 below 1000.
 
-def _multiples(n):
-    i = 0
-    threesAndFives = []
-    while i < n:
-        if i % 3 == 0 or i % 5 == 0:
-            threesAndFives.append(i)
-        i += 1
-    return sum(threesAndFives)
+# def _multiples(n):
+#     i = 0
+#     threesAndFives = []
+#     while i < n:
+#         if i % 3 == 0 or i % 5 == 0:
+#             threesAndFives.append(i)
+#         i += 1
+#     return sum(threesAndFives)
 
-print(_multiples(1000))
+# print(_multiples(1000))
 
-        
+# Given ONE array of strings, return a new array that contains every combination of each string with every other string in the array.
+
+# Input: ["a", "b", "c", "d"]
+# Output: ["ab", "ac", "ad", "ba", "bc", "bd", "ca", "cb", "cd", "da", "db", "dc"]
+
+def _mesh2(arr):
+    i1 = 0
+    output = []
+    while i1 < len(arr):
+        i2 = 0
+        while i2 < len(arr):
+            if arr[i1] != arr[i2]:
+                output.append(arr[i1] + arr[i2])
+            i2 += 1
+        i1 += 1
+    return output
+
+print (_mesh2(["a", "b", "c", "d"]))
