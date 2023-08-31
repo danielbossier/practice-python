@@ -181,3 +181,18 @@
 #     return output
 
 # print (_mesh2(["a", "b", "c", "d"]))
+
+# Given a string, write a function that returns the first occurence of two duplicate characters in a row, and return the duplicated character.
+
+# Input: “abcdefghhijkkloooop”
+# Output: “h”
+
+def dupe(string):
+    i = 0
+    while i < (len(string) - 1):
+        if string[i] == string[i+1]:
+            return string[i]
+        i += 1
+    print("no dupes")
+
+print(dupe("abcdefghijklop"))
