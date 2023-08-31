@@ -187,12 +187,38 @@
 # Input: “abcdefghhijkkloooop”
 # Output: “h”
 
-def dupe(string):
-    i = 0
-    while i < (len(string) - 1):
-        if string[i] == string[i+1]:
-            return string[i]
-        i += 1
-    print("no dupes")
+# def dupe(string):
+#     i = 0
+#     while i < (len(string) - 1):
+#         if string[i] == string[i+1]:
+#             return string[i]
+#         i += 1
+#     print("no dupes")
 
-print(dupe("abcdefghijklop"))
+# print(dupe("abcdefghijklop"))
+
+# Given a string, find the most commonly occurring letter.
+
+# Input: “peter piper picked a peck of pickled peppers”
+# Output: “p”
+
+# def most_frequent(string):
+#     i = 0
+#     letter_count = {}
+#     most_frequent_letter = ""
+#     most_frequent_count = 0
+
+#     while i < len(string):
+#         if string[i] in letter_count:
+#             letter_count[string[i]] += 1
+#         else:
+#             letter_count[string[i]] = 1
+        
+#         if letter_count[string[i]] > most_frequent_count:
+#             most_frequent_count = letter_count[string[i]]
+#             most_frequent_letter = string[i]
+#         i += 1
+#     return most_frequent_letter
+
+# print(most_frequent("peter piper picked a peck of pickled peppers"))
+
