@@ -252,10 +252,43 @@
 
 # Explanation: If someone would order one of everything on the menu, they'd pay a total of 14 (the sum of all the hash's values).
 
-def entire_menu(menu):
-    output = 0
-    for _item, price in menu.items():
-        output += price
-    return output
+# def menu_total(menu):
+#     output = 0
+#     for _item, price in menu.items():
+#         output += price
+#     return output
 
-print(entire_menu({ "hot dog": 2, "hamburger": 3, "steak sandwich": 5, "fries": 1, "cole slaw": 1, "soda": 2 }))
+# print(menu_total({ "hot dog": 2, "hamburger": 3, "steak sandwich": 5, "fries": 1, "cole slaw": 1, "soda": 2 }))
+
+# Given two strings, return true if they are anagrams of each other, and false if they are not. An anagram is a word, phrase, or name formed by rearranging the letters of another, such as cinema, formed from iceman.
+
+# Do not use any built-in sort methods.
+
+# Input: “silent”, “listen”
+# Output: true
+
+# Input: “frog”, “bear”
+# Output: false
+
+# def is_anagram(string1, string2):
+#     i = 0
+#     letter_count1 = {}
+#     letter_count2 = {}
+#     while i < len(string1):
+#         if string1[i] in letter_count1:
+#             letter_count1[string1[i]] += 1
+#         else:
+#             letter_count1[string1[i]] = 1
+#         i += 1
+#     i = 0
+#     while i < len(string2):
+#         if string2[i] in letter_count2:
+#             letter_count2[string2[i]] += 1
+#         else:
+#             letter_count2[string2[i]] = 1
+#         i += 1
+#     if letter_count1 == letter_count2:
+#         return True
+#     return False
+
+# print(is_anagram("frog", "bear"))
