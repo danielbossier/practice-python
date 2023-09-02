@@ -230,16 +230,32 @@
 
 # Explanation: "Dewey" occurs 6 times in the array, while "Truman" occurs 5 times.
 
-def votes(string):
-    i = 0
-    output = {}
-    while i < len(string):
-        if string[i] in output:
-            output[string[i]] += 1
-        else:
-            output[string[i]] = 1
-        i += 1
-    print(output)
+# def votes(string):
+#     i = 0
+#     output = {}
+#     while i < len(string):
+#         if string[i] in output:
+#             output[string[i]] += 1
+#         else:
+#             output[string[i]] = 1
+#         i += 1
+#     return output
 
 
-print(votes(["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"]))
+# print(votes(["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"]))
+
+# Given a hash, where the keys are strings representing food items, and the values are numbers representing the price of each food, return the amount someone would pay if they'd order one of each food from the entire menu.
+
+# Input: {"hot dog" => 2, "hamburger" => 3, "steak sandwich" => 5, "fries" => 1, "cole slaw" => 1, "soda" => 2}
+
+# Output: 14
+
+# Explanation: If someone would order one of everything on the menu, they'd pay a total of 14 (the sum of all the hash's values).
+
+def entire_menu(menu):
+    output = 0
+    for _item, price in menu.items():
+        output += price
+    return output
+
+print(entire_menu({ "hot dog": 2, "hamburger": 3, "steak sandwich": 5, "fries": 1, "cole slaw": 1, "soda": 2 }))
