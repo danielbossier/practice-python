@@ -316,12 +316,34 @@
 # Input: “abcdefghijklmnopqrstuvwxyz”
 # Output: false
 
-def is_money(string):
-    i = 0
-    while i < len(string):
-        if string[i] == "$":
-            return True
-        i += 1
-    return False
+# def is_money(string):
+#     i = 0
+#     while i < len(string):
+#         if string[i] == "$":
+#             return True
+#         i += 1
+#     return False
 
-print(is_money("abcdefghijklmnopqrstuvwxyz"))
+# print(is_money("abcdefghijklmnopqrstuvwxyz"))
+
+# Given a string, write a function that returns a copy of the original string that has every other character capitalized. (Capitalization should begin with the second character.)
+
+# Input: “hello, how are your porcupines today?”
+# Output: “hElLo, HoW ArE YoUr pOrCuPiNeS ToDaY?”
+
+def cap_every_other(string):
+    result = ""
+    should_capitalize = True
+
+    for i, char in enumerate(string):
+        if char.isalpha():
+            if should_capitalize:
+                result += char.upper()
+            else:
+                result += char.lower()
+            should_capitalize = not should_capitalize
+        else:
+            result += char
+    return result
+
+print(cap_every_other("hello, how are your porcupines today?"))
