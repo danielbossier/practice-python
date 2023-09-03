@@ -264,31 +264,64 @@
 
 # Do not use any built-in sort methods.
 
-# Input: “silent”, “listen”
+# Input: "silent", "listen"
 # Output: true
 
-# Input: “frog”, “bear”
+# Input: "frog", "bear"
 # Output: false
 
 # def is_anagram(string1, string2):
-#     i = 0
 #     letter_count1 = {}
 #     letter_count2 = {}
+#     i = 0
 #     while i < len(string1):
 #         if string1[i] in letter_count1:
-#             letter_count1[string1[i]] += 1
+#             letter_count1[string1[1]] += 1
 #         else:
-#             letter_count1[string1[i]] = 1
+#             letter_count1[string1[1]] = 1
 #         i += 1
 #     i = 0
 #     while i < len(string2):
 #         if string2[i] in letter_count2:
-#             letter_count2[string2[i]] += 1
+#             letter_count2[string2[1]] += 1
 #         else:
-#             letter_count2[string2[i]] = 1
+#             letter_count2[string2[1]] = 1
 #         i += 1
 #     if letter_count1 == letter_count2:
 #         return True
 #     return False
 
 # print(is_anagram("frog", "bear"))
+
+# Write a function that returns the reverse of a given string.
+
+# Input: “abcde”
+# Output: “edcba”
+
+# def reverse(string):
+#     i = -1
+#     reverse_string = ""
+#     while i > -(len(string)+ 1):
+#         reverse_string += string[i]
+#         i -= 1
+#     return reverse_string
+
+# print(reverse("abcde"))
+
+# Given a string, write a function that returns true if the “$” character is contained within the string or false if it is not.
+
+# Input: “i hate $ but i love money i know i know im crazy”
+# Output: true
+
+# Input: “abcdefghijklmnopqrstuvwxyz”
+# Output: false
+
+def is_money(string):
+    i = 0
+    while i < len(string):
+        if string[i] == "$":
+            return True
+        i += 1
+    return False
+
+print(is_money("abcdefghijklmnopqrstuvwxyz"))
