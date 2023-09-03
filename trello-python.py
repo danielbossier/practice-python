@@ -317,6 +317,13 @@
 # Output: false
 
 # def is_money(string):
+#     for i in string:
+#         if i == "$":
+#             return True
+#     return False
+# print(is_money("i hate but i love money i know i know im crazy"))
+
+# def is_money(string):
 #     i = 0
 #     while i < len(string):
 #         if string[i] == "$":
@@ -331,19 +338,54 @@
 # Input: “hello, how are your porcupines today?”
 # Output: “hElLo, HoW ArE YoUr pOrCuPiNeS ToDaY?”
 
-def cap_every_other(string):
-    result = ""
-    should_capitalize = True
+# def cap_every_other(string):
+#     result = ""
+#     should_capitalize = True
 
-    for i, char in enumerate(string):
-        if char.isalpha():
-            if should_capitalize:
-                result += char.upper()
-            else:
-                result += char.lower()
-            should_capitalize = not should_capitalize
-        else:
-            result += char
-    return result
+#     for i, char in enumerate(string):
+#         if char.isalpha():
+#             if should_capitalize:
+#                 result += char.upper()
+#             else:
+#                 result += char.lower()
+#             should_capitalize = not should_capitalize
+#         else:
+#             result += char
+#     return result
 
-print(cap_every_other("hello, how are your porcupines today?"))
+# print(cap_every_other("hello, how are your porcupines today?"))
+
+# Given a string, write a function that returns the first occurence of two duplicate characters in a row, and return the duplicated character.
+
+# Input: “abcdefghhijkkloooop”
+# Output: “h”
+
+# def first_dupe(string):
+#     i = 0
+#     dupe = "no dupes"
+#     while i < len(string):
+#         if string[i] == string[i+1]:
+#             dupe = string[i]
+#             return dupe
+#         i += 1
+#     return dupe
+# print(first_dupe("abcdefghijkloooop"))
+
+# Given a string, write a function that returns true if it is a palindrome, and false if it is not. (A palindrome is a word that reads the same both forward and backward.)
+
+# Input: “racecar”
+# Output: true
+
+# Input: “baloney”
+# Output: false
+
+# def is_palindrome(string):
+#     i1 = 0
+#     i2 = -1
+#     while i1 < len(string):
+#         if string[i1] != string[i2]:
+#             return False
+#         i1 += 1
+#         i2 -= 1
+#     return True
+# print(is_palindrome("oaao"))
