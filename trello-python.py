@@ -410,3 +410,33 @@
 #     return output
 
 # print(hamming("ABCDEFG", "ABCXEOG"))
+
+# def hamming(string1, string2):
+#     output = 0
+#     min_length = min(len(string1), len(string2))
+
+#     for i in range(min_length):
+#         if string1[i] != string2[i]:
+#             output += 1
+#     return output
+
+# print(hamming("ABCDEFG", "ABCXEOG"))
+
+# Given a string of words, write a function that returns a new string that contains the words in reverse order.
+
+# Input: "popcorn is so cool isn’t it yeah i thought so"
+# Output: "so thought i yeah it isn’t cool so is popcorn"
+
+# def reverse_words(string):
+#     output = ""
+#     current_word = ""
+#     for i in string:
+#         if i != " ":
+#             current_word += i
+#         else:
+#             output = current_word + " " + output
+#             current_word = ""
+#     output = current_word + " " + output
+#     return output
+
+# print(reverse_words("popcorn is so cool isn't it yeah i thought so"))
