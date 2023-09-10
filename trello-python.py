@@ -458,3 +458,35 @@
 #     return output
 
 # print(reverse_words("popcorn is so cool isn't it yeah thought I"))
+
+# Given two strings, return true if they are anagrams of each other, and false if they are not. An anagram is a word, phrase, or name formed by rearranging the letters of another, such as cinema, formed from iceman.
+
+# Do not use any built-in sort methods.
+
+# Input: "silent", "listen"
+# Output: true
+
+# Input: "frog", "bear"
+# Output: false
+
+# def is_anagram(string1, string2):
+#     hash1 = {}
+#     hash2 = {}
+#     for i in string1:
+#         if i in hash1:
+#             hash1[i] += 1
+#         else:
+#             hash1[i] = 1
+
+#     for i in string2:
+#         if i in hash2:
+#             hash2[i] += 1
+#         else:
+#             hash2[i] = 1
+    
+#     if hash1 == hash2:
+#         return True
+#     return False
+
+
+# print(is_anagram("silent", "listen"))
