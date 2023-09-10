@@ -440,3 +440,21 @@
 #     return output
 
 # print(reverse_words("popcorn is so cool isn't it yeah i thought so"))
+
+# Given a string of words, write a function that returns a new string that contains the words in reverse order.
+
+# Input: "popcorn is so cool isn’t it yeah i thought so"
+# Output: "so thought i yeah it isn’t cool so is popcorn"
+
+# def reverse_words(string):
+#     current_word = ""
+#     output = ""
+#     for i in string:
+#         if i != " ":
+#             current_word += i
+#         else:
+#             output = current_word + " " + output
+#             current_word = ""        
+#     return output
+
+# print(reverse_words("popcorn is so cool isn't it yeah thought I"))
