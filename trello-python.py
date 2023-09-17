@@ -469,24 +469,24 @@
 # Input: "frog", "bear"
 # Output: false
 
-# def is_anagram(string1, string2):
-#     hash1 = {}
-#     hash2 = {}
-#     for i in string1:
-#         if i in hash1:
-#             hash1[i] += 1
-#         else:
-#             hash1[i] = 1
+def is_anagram(string1, string2):
+    hash1 = {}
+    hash2 = {}
+    for i in string1:
+        if i in hash1:
+            hash1[i] += 1
+        else:
+            hash1[i] = 1
 
-#     for i in string2:
-#         if i in hash2:
-#             hash2[i] += 1
-#         else:
-#             hash2[i] = 1
+    for i in string2:
+        if i in hash2:
+            hash2[i] += 1
+        else:
+            hash2[i] = 1
     
-#     if hash1 == hash2:
-#         return True
-#     return False
+    if hash1 == hash2:
+        return True
+    return False
 
 
-# print(is_anagram("silent", "listen"))
+print(is_anagram("silent", "listen"))
