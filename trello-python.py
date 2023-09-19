@@ -560,3 +560,28 @@
 #     return False  
 
 # print(is_anagram("frog", "bear"))
+
+# You are given two parameters, an array and a number. Return a hash whose keys are each of the values from the array parameter, and whose values are the number parameter.
+
+# Input:
+
+# First argument: ["a", "e", "i", "o", "u"]
+# Second argument: 1
+
+# Output:
+
+# {
+# 'a' => 1,
+# 'e' => 1,
+# 'i' => 1,
+# 'o' => 1,
+# 'u' => 1
+# }
+
+def transform(array, number):
+    output = {}
+    for i in array:
+        output[i] = number
+    return output
+
+print(transform(["a", "e", "i", "o", "u"], 1))
