@@ -517,7 +517,15 @@
 # Output: "so thought i yeah it isn’t cool so is popcorn"
 
 # def reverse_words(string):
-
+#     output = ""
+#     current_word = ""
+#     for i in string:
+#         if i != " ":
+#             current_word += i
+#         else:
+#             output = current_word + " " + output
+#             current_word = ""
+#     return output
 
 # print(reverse_words("popcorn is so cool isn't it yeah i thought so"))
 
@@ -532,23 +540,23 @@
 # Input: "frog", "bear"
 # Output: false
 
-def is_anagram(string1, string2):
-    word_count1 = {}
-    for i in string1:
-        if string1 in word_count1:
-            word_count1[i] += 1
-        else:
-            word_count1[i] = 1
+# def is_anagram(string1, string2):
+#     word_count1 = {}
+#     for i in string1:
+#         if string1 in word_count1:
+#             word_count1[i] += 1
+#         else:
+#             word_count1[i] = 1
     
-    word_count2 = {}
-    for i in string2:
-        if string2 in word_count2:
-            word_count2[i] += 1
-        else:
-            word_count2[i] = 1
+#     word_count2 = {}
+#     for i in string2:
+#         if string2 in word_count2:
+#             word_count2[i] += 1
+#         else:
+#             word_count2[i] = 1
     
-    if word_count1 == word_count2:
-        return True
-    return False  
+#     if word_count1 == word_count2:
+#         return True
+#     return False  
 
-print(is_anagram("frog", "bear"))
+# print(is_anagram("frog", "bear"))
