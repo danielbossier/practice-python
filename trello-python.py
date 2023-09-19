@@ -469,24 +469,44 @@
 # Input: "frog", "bear"
 # Output: false
 
-def is_anagram(string1, string2):
-    hash1 = {}
-    hash2 = {}
-    for i in string1:
-        if i in hash1:
-            hash1[i] += 1
-        else:
-            hash1[i] = 1
+# def is_anagram(string1, string2):
+#     hash1 = {}
+#     hash2 = {}
+#     for i in string1:
+#         if i in hash1:
+#             hash1[i] += 1
+#         else:
+#             hash1[i] = 1
 
-    for i in string2:
-        if i in hash2:
-            hash2[i] += 1
-        else:
-            hash2[i] = 1
+#     for i in string2:
+#         if i in hash2:
+#             hash2[i] += 1
+#         else:
+#             hash2[i] = 1
     
-    if hash1 == hash2:
-        return True
-    return False
+#     if hash1 == hash2:
+#         return True
+#     return False
 
 
-print(is_anagram("silent", "listen"))
+# print(is_anagram("silent", "listen"))
+
+# Given an array of strings, return a hash that provides of a count of how many times each string occurs.
+
+# Input: ["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"]
+
+# Output: {"Dewey" => 6, "Truman" => 5}
+
+# Explanation: "Dewey" occurs 6 times in the array, while "Truman" occurs 5 times.
+
+def votes(array):
+    output = {}
+    for i in array:
+        if i in output:
+            output[i] += 1
+        else:
+            output[i] = 1
+    
+    return output
+
+print(votes(["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"]))
