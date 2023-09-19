@@ -578,10 +578,51 @@
 # 'u' => 1
 # }
 
-def transform(array, number):
-    output = {}
-    for i in array:
-        output[i] = number
-    return output
+# def transform(array, number):
+#     output = {}
+#     for i in array:
+#         output[i] = number
+#     return output
 
-print(transform(["a", "e", "i", "o", "u"], 1))
+# print(transform(["a", "e", "i", "o", "u"], 1))
+
+# Given a hash, create a new hash that has the keys and values switched.
+
+# Input: {"a" => 1, "b" => 2, "c" => 3}
+# Output: {1 => "a", 2 => "b", 3 => "c"}
+
+# def flip_hash(objects):
+#     output = {}
+#     for key, value in objects.items():
+#         output[value] = key
+#     return output
+
+
+# print(flip_hash({"a" : 1, "b" : 2, "c" : 3}))
+
+# You are given a hash in format #A, and you are to return the same data as a hash using format #B, as specified below:
+
+# Input:
+
+# {
+# 1 => ["A", "E", "I", "O", "U"]
+# }
+
+# Output:
+
+# {
+# 'a' => 1,
+# 'e' => 1,
+# 'i' => 1,
+# 'o' => 1,
+# 'u' => 1
+# }
+
+# def alter_hash(input_hash):
+#     output = {}
+#     for key, values in input_hash.items():
+#         for value in values:
+#             output[value.lower()] = key
+#     return output
+
+# print(alter_hash({1 : ["A", "E", "I", "O", "U"]}))
