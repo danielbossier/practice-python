@@ -499,14 +499,56 @@
 
 # Explanation: "Dewey" occurs 6 times in the array, while "Truman" occurs 5 times.
 
-def votes(array):
-    output = {}
-    for i in array:
-        if i in output:
-            output[i] += 1
-        else:
-            output[i] = 1
+# def votes(array):
+#     output = {}
+#     for i in array:
+#         if i in output:
+#             output[i] += 1
+#         else:
+#             output[i] = 1
     
-    return output
+#     return output
 
-print(votes(["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"]))
+# print(votes(["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"]))
+
+# Given a string of words, write a function that returns a new string that contains the words in reverse order.
+
+# Input: "popcorn is so cool isn't it yeah i thought so"
+# Output: "so thought i yeah it isn’t cool so is popcorn"
+
+# def reverse_words(string):
+
+
+# print(reverse_words("popcorn is so cool isn't it yeah i thought so"))
+
+
+# Given two strings, return true if they are anagrams of each other, and false if they are not. An anagram is a word, phrase, or name formed by rearranging the letters of another, such as cinema, formed from iceman.
+
+# Do not use any built-in sort methods.
+
+# Input: "silent", "listen"
+# Output: true
+
+# Input: "frog", "bear"
+# Output: false
+
+def is_anagram(string1, string2):
+    word_count1 = {}
+    for i in string1:
+        if string1 in word_count1:
+            word_count1[i] += 1
+        else:
+            word_count1[i] = 1
+    
+    word_count2 = {}
+    for i in string2:
+        if string2 in word_count2:
+            word_count2[i] += 1
+        else:
+            word_count2[i] = 1
+    
+    if word_count1 == word_count2:
+        return True
+    return False  
+
+print(is_anagram("frog", "bear"))
