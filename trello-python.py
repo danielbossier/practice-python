@@ -727,3 +727,42 @@
 # ]
 
 # print(authors_hash(books))
+
+# Given an array of numbers, return a new array containing just two numbers (from the original array) that add up to the number 10. If there are no two numbers that add up to 10, return false.
+
+# Specifically use nested loops to solve this exercise even though there are other approaches as well.
+
+# Input: [2, 5, 3, 1, 0, 7, 11]
+# Output: [3, 7]
+
+# Input: [1, 2, 3, 4, 5]
+# Output: false (While 1, 2, 3, and 4 altogether add up to 10, we're seeking just one pair of numbers.)
+
+# def sum_ten(array):
+#     output = 0
+#     i1 = 0
+#     i2 = 1
+#     while i1 < len(array):
+#         while i2 < len(array):
+#             if i1 + i2 == 10:
+#                 output = i1 + i2
+#                 return output
+#             i2 += 1
+#         i1 += 1
+#         i2 = i1 + 1
+#     return False    
+
+# print(sum_ten([1, 2, 3, 4, 5]))
+
+# streamlined alternative:
+
+# def sum_ten(array):
+#     output = 0
+#     for i1 in range(len(array)):
+#         for i2 in range(i1 + 1, len(array)):
+#             if i1 + i2 == 10:
+#                 output = i1 + i2
+#                 return output
+#     return False
+
+# print(sum_ten([2, 5, 3, 1, 0, 11]))
