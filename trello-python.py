@@ -702,14 +702,28 @@
 # ]
 # }
 
-def authors_hash(input_hash):
+# def authors_hash(input_hash):
+#     author_dict = {}
+
+#     for book in input_hash:
+#         author = book["author"]
+#         book_data = {"title" : book["title"], "year" : book["year"] }
+
+#         if author in author_dict:
+#             author_dict[author].append(book_data)
+#         else:
+#             author_dict[author] = [book_data]
+
+#     return author_dict
     
-print(authors_hash([
-{"title": "The Lord of the Rings", "author": "J. R. R. Tolkien", "year": 1954 },
-{"title": "To Kill a Mockingbird", "author": "Harper Lee", "year": 1960 },
-{"title": "1984", "author": "George Orwell", "year": 1949 },
-{"title": "Go Set a Watchman", "author": "Harper Lee", "year": 2015 },
-{"title": "The Hobbit", "author": "J. R. R. Tolkien", "year": 1937 },
-{"title": "The Great Gatsby", "author": "F. Scott Fitzgerald", "year": 1925 },
-{"title": "The Two Towers", "author": "J. R. R. Tolkien", "year": 1954 }
-]))
+# books = [
+# {"title": "The Lord of the Rings", "author": "J. R. R. Tolkien", "year": 1954 },
+# {"title": "To Kill a Mockingbird", "author": "Harper Lee", "year": 1960 },
+# {"title": "1984", "author": "George Orwell", "year": 1949 },
+# {"title": "Go Set a Watchman", "author": "Harper Lee", "year": 2015 },
+# {"title": "The Hobbit", "author": "J. R. R. Tolkien", "year": 1937 },
+# {"title": "The Great Gatsby", "author": "F. Scott Fitzgerald", "year": 1925 },
+# {"title": "The Two Towers", "author": "J. R. R. Tolkien", "year": 1954 }
+# ]
+
+# print(authors_hash(books))
