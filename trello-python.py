@@ -626,3 +626,90 @@
 #     return output
 
 # print(alter_hash({1 : ["A", "E", "I", "O", "U"]}))
+
+# Given a hash, create a new hash that has the keys and values switched.
+
+# Input: {"a" => 1, "b" => 2, "c" => 3}
+# Output: {1 => "a", 2 => "b", 3 => "c"}
+
+# def new_hash(input_hash):
+#     flip_hash = {}
+    
+#     for key, value in input_hash.items():
+#         flip_hash[value] = key
+    
+#     return flip_hash
+
+# print(new_hash({"a" : 1, "b" : 2, "c" : 3}))
+
+# You are given a hash in format #A, and you are to return the same data as a hash using format #B, as specified below:
+
+# Input:
+
+# {
+# 1 => ["A", "E", "I", "O", "U"]
+# }
+
+# Output:
+
+# {
+# 'a' => 1,
+# 'e' => 1,
+# 'i' => 1,
+# 'o' => 1,
+# 'u' => 1
+# }
+
+# def re_format(input_hash):
+#     output_hash = {}
+
+#     for key, values in input_hash.items():
+#         for value in values:
+#             output_hash[value] = key
+        
+#     return output_hash
+
+# print(re_format({1 : ["A", "E", "I", "O", "U"]}))
+
+# Given a list of books provided in this format:
+
+# [
+# {title: "The Lord of the Rings", author: "J. R. R. Tolkien", year: 1954 },
+# {title: "To Kill a Mockingbird", author: "Harper Lee", year: 1960 },
+# {title: "1984", author: "George Orwell", year: 1949 },
+# {title: "Go Set a Watchman", author: "Harper Lee", year: 2015 },
+# {title: "The Hobbit", author: "J. R. R. Tolkien", year: 1937 },
+# {title: "The Great Gatsby", author: "F. Scott Fitzgerald", year: 1925 },
+# {title: "The Two Towers", author: "J. R. R. Tolkien", year: 1954 }
+# ]
+
+# return the data in this new author-centric format:
+
+# { "J. R. R. Tolkien" => [
+# {title: "The Lord of the Rings", year: 1954 },
+# {title: "The Hobbit", year: 1937 },
+# {title: "The Two Towers", year: 1954 }
+# ],
+# "Harper Lee" => [
+# {title: "To Kill a Mockingbird", year: 1960 },
+# {title: "Go Set a Watchman", year: 2015 }
+# ],
+# "George Orwell" => [
+# {title: "1984", year: 1949 }
+# ],
+# "F. Scott Fitzgerald" => [
+# {title: "The Great Gatsby", year: 1925 }
+# ]
+# }
+
+def authors_hash(input_hash):
+    
+print(authors_hash([
+{"title": "The Lord of the Rings", "author": "J. R. R. Tolkien", "year": 1954 },
+{"title": "To Kill a Mockingbird", "author": "Harper Lee", "year": 1960 },
+{"title": "1984", "author": "George Orwell", "year": 1949 },
+{"title": "Go Set a Watchman", "author": "Harper Lee", "year": 2015 },
+{"title": "The Hobbit", "author": "J. R. R. Tolkien", "year": 1937 },
+{"title": "The Great Gatsby", "author": "F. Scott Fitzgerald", "year": 1925 },
+{"title": "The Two Towers", "author": "J. R. R. Tolkien", "year": 1954 }
+]))
