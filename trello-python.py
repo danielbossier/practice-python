@@ -880,3 +880,13 @@
 #     return False
 
 # print(sum_ten([2, 5, 1, 0, 7, 11]))
+
+
+# a cool method in Python is zip() which allows you to easily combine two arrays together alternating inputs
+# this allows you to create dictionaries very easily
+
+# keys = ["a", "b", "c"]
+# values = [1, 2, 3]
+
+# data_dict = dict(zip(keys, values))
+# print(data_dict)
