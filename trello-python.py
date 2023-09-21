@@ -803,7 +803,7 @@
 
 #     for book in books_hash:
 #         author = book["author"]
-#         book_data = { "title" : book["title"], "year" : book["title"] }
+#         book_data = { "title" : book["title"], "year" : book["year"] }
 
 #         if author in authors_dict:
 #             authors_dict[author].append(book_data)
@@ -834,6 +834,32 @@
 # {title: "The Two Towers", author: "J. R. R. Tolkien", year: 1954 }
 # ]
 
+# def authors_hash(input_data):
+#     authors_dict = {}
+
+#     for book in input_data:
+#         author = book["author"]
+#         book_data = { "title" : book["title"], "year" : book["year"] }
+
+#         if author in authors_dict:
+#             authors_dict[author].append(book_data)
+#         else:
+#             authors_dict[author] = [book_data]
+
+#     return authors_dict
+
+# books = [
+# {"title": "The Lord of the Rings", "author": "J. R. R. Tolkien", "year": 1954 },
+# {"title": "To Kill a Mockingbird", "author": "Harper Lee", "year": 1960 },
+# {"title": "1984", "author": "George Orwell", "year": 1949 },
+# {"title": "Go Set a Watchman", "author": "Harper Lee", "year": 2015 },
+# {"title": "The Hobbit", "author": "J. R. R. Tolkien", "year": 1937 },
+# {"title": "The Great Gatsby", "author": "F. Scott Fitzgerald", "year": 1925 },
+# {"title": "The Two Towers", "author": "J. R. R. Tolkien", "year": 1954 }
+# ]
+
+# print(authors_hash(books))
+
 # Given an array of numbers, return a new array containing just two numbers (from the original array) that add up to the number 10. If there are no two numbers that add up to 10, return false.
 
 # Specifically use nested loops to solve this exercise even though there are other approaches as well.
@@ -844,13 +870,13 @@
 # Input: [1, 2, 3, 4, 5]
 # Output: false (While 1, 2, 3, and 4 altogether add up to 10, we're seeking just one pair of numbers.)
 
-def sum_ten(arr):
-    output = 0
-    for i1 in range(len(arr)):
-        for i2 in range(i1 + 1, len(arr)):
-            if i1 + i2 == 10:
-                output = i1 + i2
-                return output
-    return False
+# def sum_ten(arr):
+#     output = 0
+#     for i1 in range(len(arr)):
+#         for i2 in range(i1 + 1, len(arr)):
+#             if i1 + i2 == 10:
+#                 output = i1 + i2
+#                 return output
+#     return False
 
-print(sum_ten([2, 5, 1, 0, 7, 11]))
+# print(sum_ten([2, 5, 1, 0, 7, 11]))
