@@ -890,3 +890,9 @@
 
 # data_dict = dict(zip(keys, values))
 # print(data_dict)
+
+bears = ["Britty", "Honey", "Yawny"]
+birth_months = ["May", "September", "August"]
+
+bear_dict = dict(zip(bears, birth_months))
+print(bear_dict)
