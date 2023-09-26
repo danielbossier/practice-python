@@ -891,8 +891,38 @@
 # data_dict = dict(zip(keys, values))
 # print(data_dict)
 
-bears = ["Britty", "Honey", "Yawny"]
-birth_months = ["May", "September", "August"]
+# bears = ["Britty", "Honey", "Yawny"]
+# birth_months = ["May", "September", "August"]
 
-bear_dict = dict(zip(bears, birth_months))
-print(bear_dict)
+# bear_dict = dict(zip(bears, birth_months))
+# print(bear_dict)
+
+# Given an array of strings, return a hash that provides of a count of how many times each string occurs.
+
+# Input: ["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"]
+
+# Output: {"Dewey" => 6, "Truman" => 5}
+
+# def votes(input):
+#     output = {}
+#     for i in input:
+#         if i in output:
+#             output[i] += 1
+#         else:
+#             output[i] = 1
+#     return output
+
+# print(votes(["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"]))
+
+# Given ONE array of strings, return a new array that contains every combination of each string with every other string in the array.
+
+# Input: ["a", "b", "c", "d"]
+# Output: ["ab", "ac", "ad", "ba", "bc", "bd", "ca", "cb", "cd", "da", "db", "dc"]
+
+def all_combos(array):
+    output = []
+    for i1 in array:
+        for i2 in array:
+            output.append(i1 + i2)
+    return output
+print(all_combos(["a", "b", "c", "d"]))
