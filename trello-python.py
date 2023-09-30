@@ -932,10 +932,10 @@
 # Input: ["a", "b", "c", "d"]
 # Output: ["ab", "ac", "ad", "ba", "bc", "bd", "ca", "cb", "cd", "da", "db", "dc"]
 
-# def all_combos(array):
-#     output = []
-#     for i1 in array:
-#         for i2 in array:
-#             output.append(i1 + i2)
-#     return output
-# print(all_combos(["a", "b", "c", "d"]))
+def all_combos(array):
+    output = []
+    for i1 in array:
+        for i2 in array:
+            output.append(i1 + i2)
+    return output
+print(all_combos(["a", "b", "c", "d"]))
