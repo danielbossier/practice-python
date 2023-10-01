@@ -939,3 +939,20 @@
 #             output.append(i1 + i2)
 #     return output
 # print(all_combos(["a", "b", "c", "d"]))
+
+# Given an array of strings, return a hash that provides of a count of how many times each string occurs.
+
+# Input: ["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"]
+
+# Output: {"Dewey" => 6, "Truman" => 5}
+
+def count_votes(array):
+    output = {}
+    for i in array:
+        if i in output:
+            output[i] += 1
+        else:
+            output[i] = 1
+    return output
+
+print(count_votes(["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"]))
