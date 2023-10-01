@@ -946,13 +946,27 @@
 
 # Output: {"Dewey" => 6, "Truman" => 5}
 
-def count_votes(array):
-    output = {}
-    for i in array:
-        if i in output:
-            output[i] += 1
-        else:
-            output[i] = 1
-    return output
+# def count_votes(array):
+#     output = {}
+#     for i in array:
+#         if i in output:
+#             output[i] += 1
+#         else:
+#             output[i] = 1
+#     return output
 
-print(count_votes(["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"]))
+# print(count_votes(["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"]))
+
+
+# Given a hash, create a new hash that has the keys and values switched.
+
+# Input: {"a" => 1, "b" => 2, "c" => 3}
+# Output: {1 => "a", 2 => "b", 3 => "c"}
+
+def flip_hash(og_hash):
+    flipped = {}
+    for key, value in og_hash.items():
+        flipped[value] = key
+    return flipped
+
+print(flip_hash({"a" : 1, "b" : 2, "c" : 3}))
