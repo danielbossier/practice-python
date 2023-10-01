@@ -963,10 +963,25 @@
 # Input: {"a" => 1, "b" => 2, "c" => 3}
 # Output: {1 => "a", 2 => "b", 3 => "c"}
 
-def flip_hash(og_hash):
-    flipped = {}
-    for key, value in og_hash.items():
-        flipped[value] = key
-    return flipped
+# def flip_hash(og_hash):
+#     flipped = {}
+#     for key, value in og_hash.items():
+#         flipped[value] = key
+#     return flipped
 
-print(flip_hash({"a" : 1, "b" : 2, "c" : 3}))
+# print(flip_hash({"a" : 1, "b" : 2, "c" : 3}))
+
+# Given a string, write a function that returns true if it is a palindrome, and false if it is not. (A palindrome is a word that reads the same both forward and backward.)
+
+# Input: “racecar”
+# Output: true
+
+# Input: “baloney”
+# Output: false
+
+# def is_palindrome(string):
+#     for i in range(len(string) // 2):
+#         if string[i] != string[len(string) - i - 1]:
+#             return False
+#     return True
+# print(is_palindrome("racecar"))
