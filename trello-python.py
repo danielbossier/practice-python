@@ -93,7 +93,6 @@
 # _reverse([1, 2, 3, 4, 5])
 
 
-
 # WORKING ON THIS ONE, REVIEW ENUMERATE
 # Input:
 # [2, 1, 3, 2, 5, 1, 2, 6, 2, 7, 1, 5, 6, 3, 2, 6, 2, 1, 2]
@@ -998,3 +997,29 @@
 #     return sum
 
 # print(multiple(1000))
+
+# Given an array of numbers, write a function that returns a new array whose values are the original array’s value doubled.
+
+# Input: [4, 2, 5, 99, -4]
+# Output: [8, 4, 10, 198, -8]
+
+# def double(array):
+#     output = []
+#     for i in array:
+#         i = i * 2
+#         output.append(i)
+#     return output
+
+# print(double([4, 2, 5, 99, -4]))
+
+# Write a function that returns whether a given number is a prime number.
+
+# def is_prime(n):
+#     if n < 2:
+#         return False
+#     if n % 2 != 0:
+#         return True
+#     return False
+        
+# print(is_prime(11))
+        
