@@ -990,13 +990,11 @@
 
 # Find the sum of all the multiples of 3 or 5 below 1000.
 
-def multiple(input):
-    i = 0
-    array = []
-    while i < input:
-        if i % 3 == 0 or i % 5 == 0:
-            array.append(i)
-        i += 1
-    return sum(array)
+# def multiple(input):
+#     sum = 0
+#     for i in range(input):
+#         if i % 3 == 0 or i % 5 == 0:
+#             sum += i
+#     return sum
 
-print(multiple(1000))
+# print(multiple(1000))
