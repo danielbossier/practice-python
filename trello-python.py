@@ -1014,12 +1014,12 @@
 
 # Write a function that returns whether a given number is a prime number.
 
-# def is_prime(n):
-#     if n < 2:
-#         return False
-#     if n % 2 != 0:
-#         return True
-#     return False
+def is_prime(n):
+    if n < 2:
+        return False
+    if n % 2 != 0:
+        return True
+    return False
         
-# print(is_prime(11))
+print(is_prime(11))
         
