@@ -1,2 +1,1 @@
-
-    output = {}
+        # print(i + (i + 1))

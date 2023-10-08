@@ -1033,4 +1033,15 @@
 # Input: [1, 2, 3, 4, 5]
 # Output: false (While 1, 2, 3, and 4 altogether add up to 10, we're seeking just one pair of numbers.)
 
+def equal_ten(array):
+    output = []
+    for i in array:
+        for i2 in array:
+            if i + i2 == 10:
+                output.append(i)
+                output.append(i2)
+                return output
+    return False
+
+print(equal_ten([2, 3, 1, 0, 7, 11]))
         
