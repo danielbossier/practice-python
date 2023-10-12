@@ -1013,22 +1013,22 @@
 # print(double([4, 2, 5, 99, -4]))
 
 # Write a function that returns whether a given number is a prime number.
-import math
+# import math
 
-def is_prime(n):
-    if n < 2:
-        return False
-    if n == 2 or n == 3:
-        return True
-    if n % 2 == 0:
-        return False
+# def is_prime(n):
+#     if n < 2:
+#         return False
+#     if n == 2 or n == 3:
+#         return True
+#     if n % 2 == 0:
+#         return False
     
-    for i in range(3, int(math.sqrt(n)) + 1, 2):
-        if n % i == 0:
-            return False
-    return True
+#     for i in range(3, int(math.sqrt(n)) + 1, 2):
+#         if n % i == 0:
+#             return False
+#     return True
         
-print(is_prime(21))
+# print(is_prime(21))
 
 # Given an array of numbers, return a new array containing just two numbers (from the original array) that add up to the number 10. If there are no two numbers that add up to 10, return false.
 
