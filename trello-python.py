@@ -1014,14 +1014,17 @@
 
 # Write a function that returns whether a given number is a prime number.
 
-# def is_prime(n):
-#     if n < 2:
-#         return False
-#     if n % 2 != 0:
-#         return True
-#     return False
+def is_prime(n):
+    if n < 2:
+        return False
+    if n == 2 or n == 3:
+        return True
+    if n % 2 == 0:
+        return False
+    
+    
         
-# print(is_prime(11))
+print(is_prime(21))
 
 # Given an array of numbers, return a new array containing just two numbers (from the original array) that add up to the number 10. If there are no two numbers that add up to 10, return false.
 
