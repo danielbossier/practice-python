@@ -1058,18 +1058,18 @@
 # If the number is divisible by 5, print out "BUZZ".
 # If the number is divisible by both 3 and 5, print out "FIZZBUZZ".
 
-def fizzbuzz(n):
-    i = 1
-    while i <= n:
-        if i % 3 == 0 and i % 5 == 0:
-            print("FIZZBUZZ")
-        elif i % 3 == 0:
-            print("FIZZ")
-        elif i % 5 == 0:
-            print("BUZZ")
-        else:
-            print(i)
-        i += 1
+# def fizzbuzz(n):
+#     i = 1
+#     while i <= n:
+#         if i % 3 == 0 and i % 5 == 0:
+#             print("FIZZBUZZ")
+#         elif i % 3 == 0:
+#             print("FIZZ")
+#         elif i % 5 == 0:
+#             print("BUZZ")
+#         else:
+#             print(i)
+#         i += 1
 
 
-print(fizzbuzz(30))
+# print(fizzbuzz(30))
